@@ -2,6 +2,10 @@
 
 This is a project using the Gemini API to show capabilities as well as how changing the temperature, TopK and TopP will change responses given. You will be able to randomly change the Temperature, TopP and TopK values to change the "randomness" in the model. You can also maximize the "randomness". Once you end the code the chat will be saved to a text file with the history. 
 
+UPDATE: ADDED GRADIO
+
+A Gradio version of the code has been implemented using [Gradio Interface](https://www.gradio.app/docs/interface). This will create a local host webpage for a GUI. Note that for this implementation you will have to manually press the checkbox on and off for it to change the condition. Output 0 is the output for the current prompt and output 1 is the chat history. 
+
 ## Set Up and Installation
 
 ### Set up
@@ -12,11 +16,16 @@ In order to run the code you will need a [Gemini API key](https://ai.google.dev)
 
 To run the code you will need to have Anaconda and run the following commands
 
-
 <br>&ensp;&ensp;&ensp;&ensp;conda create -n chatbot python=3.10
 <br>&ensp;&ensp;&ensp;&ensp;conda activate chatbot
 <br>&ensp;&ensp;&ensp;&ensp;pip install -q -U google-generativeai
+<br>&ensp;&ensp;&ensp;&ensp;pip install gradio
+
+For using Tkinter
 <br>&ensp;&ensp;&ensp;&ensp;python Gemini_chatbot.py
+
+For using Gradio
+<br>&ensp;&ensp;&ensp;&ensp;python Gemini_chatbot_gradio.py
 
 ## What is TopK, TopP and Temperature?
 TopK:
