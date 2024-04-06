@@ -16,16 +16,16 @@ In order to run the code you will need a [Gemini API key](https://ai.google.dev)
 
 To run the code you will need to have Anaconda and run the following commands
 
-<br>&ensp;&ensp;&ensp;&ensp;conda create -n chatbot python=3.10
-<br>&ensp;&ensp;&ensp;&ensp;conda activate chatbot
-<br>&ensp;&ensp;&ensp;&ensp;pip install -q -U google-generativeai
-<br>&ensp;&ensp;&ensp;&ensp;pip install gradio
+<br>&ensp;&ensp;&ensp;&ensp;`conda create -n chatbot python=3.10`
+<br>&ensp;&ensp;&ensp;&ensp;`conda activate chatbot`
+<br>&ensp;&ensp;&ensp;&ensp;`pip install -q -U google-generativeai`
+<br>&ensp;&ensp;&ensp;&ensp;`pip install gradio`
 
 For using Tkinter
-<br>&ensp;&ensp;&ensp;&ensp;python Gemini_chatbot.py
+<br>&ensp;&ensp;&ensp;&ensp;`python Gemini_chatbot.py`
 
 For using Gradio
-<br>&ensp;&ensp;&ensp;&ensp;python Gemini_chatbot_gradio.py
+<br>&ensp;&ensp;&ensp;&ensp;`python Gemini_chatbot_gradio.py`
 
 ## What is TopK, TopP and Temperature?
 TopK:
