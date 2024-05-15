@@ -35,7 +35,7 @@ class Gemini():
         )
 
         # Create model and history
-        self.model = genai.GenerativeModel('gemini-pro', generation_config=generation_config)
+        self.model = genai.GenerativeModel('gemini-1.5-pro-latest', generation_config=generation_config)
         self.chat = self.model.start_chat(history=[])
 
     # Send message to Gemini from GUI

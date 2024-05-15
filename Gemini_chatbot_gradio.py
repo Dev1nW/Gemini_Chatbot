@@ -27,7 +27,7 @@ class Gemini():
         )
 
         # Create model and history
-        self.model = genai.GenerativeModel('gemini-pro', generation_config=generation_config)
+        self.model = genai.GenerativeModel('gemini-1.5-pro-latest', generation_config=generation_config)
         self.chat = self.model.start_chat(history=[])
 
         self.demo = gr.Interface(fn=self.submit_message, inputs=["text", "checkbox", "checkbox", "checkbox", "checkbox"], outputs=["text", "text"])
